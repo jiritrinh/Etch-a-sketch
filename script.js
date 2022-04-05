@@ -26,7 +26,6 @@ updateButton.addEventListener("click", () => {
             updateGrid(gridSize);
             isFalse = false;
         }
-
     }
     
   
