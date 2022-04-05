@@ -22,19 +22,19 @@ updateButton.addEventListener("click", () => {
   
 })
 
+
+/* clears previous squares so it wont stack and creates a new one */
+
 function updateGrid(gridSize) {
-    container.innerHTML = "";
-    container.style.gridTemplateColumns = "repeat(" + gridSize + ", 2fr)";
-    container.style.gridTemplateRows = "repeat(" + gridSize + ", 2fr)";
+    container.innerHTML="";
+    container.style.gridTemplateColumns = "repeat(" + gridSize + ", 1fr)";
+    container.style.gridTemplateRows = "repeat(" + gridSize + ", 1fr)";
     for (let i = 0; i < gridSize * gridSize; i++) {
         box = document.createElement("div");
         box.className = "box";
         container.appendChild(box);
     }
-    
     draw();
-    
-
 }
 
 
