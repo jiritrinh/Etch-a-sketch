@@ -7,7 +7,6 @@
   grid-template-columns: repeat(16, 2fr);
   grid-template-rows: repeat(16, 2fr);
   border: 1px solid;
-  justify-content: center;
 
   
 }
