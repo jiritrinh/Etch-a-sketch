@@ -1,23 +1,29 @@
+let container = document.querySelector("#grid-container")
+
+/* creating grid */
+let box;
 function makeGrid() {
-    let container = document.createElement("div");
-    container.id = "main";
-
-    for (let i = 0; i < 16; i++) {
-        let row = document.createElement("div");
-        row.id = "row-" + i;
-        row.className = "row";
-
-        for (let j = 0; j < 16; j++) {
-            let col = document.createElement("div");
-            col.className = "box";
-            row.appendChild(col);
-        }
-
-        container.appendChild(row);
-        
+    for (let i = 0; i < 256; i++) {
+        box = document.createElement("div");
+        box.className = "box";
+        container.appendChild(box);
     }
-
-    document.body.appendChild(container);
 }
 
+
 makeGrid();
+
+
+/* creating trace function for drawing */
+
+let divs = document.querySelectorAll(".box");
+
+divs.forEach(div => {
+    div.addEventListener("mouseover", () => {
+        div.classList.add("trail");
+    })
+})
+
+
+
+
