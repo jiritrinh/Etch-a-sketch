@@ -17,8 +17,18 @@ function makeGrid() {
 /* creating reset button that clears and updates the squares */
 let updateButton = document.querySelector("#update-button");
 updateButton.addEventListener("click", () => {
-    let gridSize = prompt("Enter grid(1-64): ");
-    updateGrid(gridSize);
+
+    let isFalse = true;
+    
+    while(isFalse) {
+        let gridSize = prompt("Enter grid(1-100): ");
+        if(gridSize >= 1 && gridSize <= 100) {
+            updateGrid(gridSize);
+            isFalse = false;
+        }
+
+    }
+    
   
 })
 
