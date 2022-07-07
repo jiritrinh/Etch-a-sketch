@@ -1,6 +1,10 @@
 # Etch-a-sketch
 
+Made a fun drawing site for myself!
 
-site: https://jiritrinh.github.io/Etch-a-sketch/
+**[Take a look!](https://jiritrinh.github.io/Etch-a-sketch/)**
+
+
+
 
 
